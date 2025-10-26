@@ -47,67 +47,9 @@ Una vez se tenga lo anterior entonces se procede con el cierre de Sysprep, para 
 2. Crea un usuario y lo ubica en el grupo de administrador y le fja una clave.
 3. Deja el usuario administrador desactivado.
 
+[unnatend.xml](https://github.com/felipetibatag/publico/blob/main/unattend.xml)
+
 Dicho archivo ***unnatend.xml***  debe ser utilizado al momento de generar el Sysprep de la siguiente forma:
-
-<details><summary>Ver XML</summary>
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<unattend xmlns="urn:schemas-microsoft-com:unattend"
-          xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State"
-          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-
-  <settings pass="generalize">
-    <component name="Microsoft-Windows-Sysprep" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
-      <SkipRemoveApps>true</SkipRemoveApps>
-    </component>
-  </settings>
-
-  <settings pass="oobeSystem">
-    <component name="Microsoft-Windows-International-Core" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
-      <InputLocale>es-ES</InputLocale>
-      <SystemLocale>es-ES</SystemLocale>
-      <UILanguage>es-ES</UILanguage>
-      <UserLocale>es-ES</UserLocale>
-    </component>
-
-    <component name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS">
-      <TimeZone>Romance Standard Time</TimeZone>
-      <RegisteredOrganization>Laboratorio Felipe</RegisteredOrganization>
-      <RegisteredOwner>Felipe</RegisteredOwner>
-      <ComputerName>pcbase</ComputerName>
-      <ShowWindowsLive>false</ShowWindowsLive>
-
-      <AutoLogon>
-        <Enabled>true</Enabled>
-        <Username>useradmin</Username>
-        <LogonCount>1</LogonCount>
-        <Password>
-          <Value>a1s2d3f4</Value>
-          <PlainText>true</PlainText>
-        </Password>
-      </AutoLogon>
-
-      <UserAccounts>
-        <LocalAccounts>
-          <LocalAccount wcm:action="add">
-            <Name>useradmin</Name>
-            <Group>Administrators</Group>
-            <DisplayName>Administrador Felipe</DisplayName>
-            <Description>Cuenta personalizada para laboratorio</Description>
-            <Password>
-              <Value>a1s2d3f4</Value>
-              <PlainText>true</PlainText>
-            </Password>
-          </LocalAccount>
-        </LocalAccounts>
-      </UserAccounts>
-    </component>
-  </settings>
-</unattend>
-```
-</details>
-
-
 
 ```powershell
 sysprep.exe /audit /generalize /shutdown /unattend:C:\temp\unattend.xml /mode:vm
