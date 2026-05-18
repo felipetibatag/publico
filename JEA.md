@@ -45,7 +45,7 @@ Invoke-Command -ComputerName CLI-EQUIPOW1101.miscositas.local -ScriptBlock {
 
 >En el ejemplo anterior se integró una función para que permitiera ejecutar un comando únicamente del IPconfig, si agregaba el ipconfig.exe del system32 entonces iba a poder ejecutar el release o renew, pero al crear una función específica se le indicó cuál era el único comando a ejecutar que fue el ipconfig /registerdns
 
-![](imgs/LaboratorioJEA.zip)
+![ArchivosEjemplo](imgs/LaboratorioJEA.zip)
 
 
 ## Crear el archivo de configuración de sesión PSSC

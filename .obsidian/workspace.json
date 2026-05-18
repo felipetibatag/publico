@@ -42,8 +42,8 @@
               "type": "markdown",
               "state": {
                 "file": "JEA.md",
-                "mode": "source",
-                "source": false
+                "mode": "preview",
+                "source": true
               },
               "icon": "lucide-file",
               "title": "JEA"
@@ -214,6 +214,7 @@
   },
   "active": "5eb9a60f75ba5f64",
   "lastOpenFiles": [
+    "imgs/LaboratorioJEA 1.zip",
     "IIS Redireccion 80 a 443.md",
     "Hyper-v Crear Maquinas.md",
     "sitioSeguroApache(Linux).md",
