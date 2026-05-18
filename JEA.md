@@ -44,6 +44,10 @@ Invoke-Command -ComputerName CLI-EQUIPOW1101.miscositas.local -ScriptBlock {
 ~~~
 
 >En el ejemplo anterior se integró una función para que permitiera ejecutar un comando únicamente del IPconfig, si agregaba el ipconfig.exe del system32 entonces iba a poder ejecutar el release o renew, pero al crear una función específica se le indicó cuál era el único comando a ejecutar que fue el ipconfig /registerdns
+
+![](imgs/LaboratorioJEA.zip)
+
+
 ## Crear el archivo de configuración de sesión PSSC
 Acá se configura que cuando el usuario se conecte al equipo que tenga esta configuración de JEA se le asigne el rol que se acaba de crear y se ejecuten los comandos bajo una cuenta virtual de administrador.
 
