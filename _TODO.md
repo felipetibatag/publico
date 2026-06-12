@@ -1,0 +1,9 @@
+- [ ] Montar servidor web Linux.
+- [x] Montar servidor windows CA
+- [ ] Montar servidor window WEB
+- [ ] Montar servidor Exchange 2016
+- [x] Montar servidor file share.
+- [ ] Ejercicio JEA
+- [ ] Ejercicio cuentas de servicio
+- [ ] Ejercicio LDAPS
+- [ ] Ejercicio conexión WinRM segura
