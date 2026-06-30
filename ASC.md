@@ -19,7 +19,7 @@
 
 - Agregar 2 permisos:
 
-![](imgs/Pasted%20image%2020260612005135.png)
+![697](imgs/Pasted%20image%2020260612005135.png)
 ![](imgs/Pasted%20image%2020260612005206.png)
 
 - Creado el rol, por el mismo lado y en la parte de roles tendría que ver el rol creado y desde ese mismo lado puedo asignar entonces la aplicación para que tenga ese rol con esos permisos:
