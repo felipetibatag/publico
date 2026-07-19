@@ -7,7 +7,7 @@ sysprep.exe /oobe /generalize /shutdown /mode:vm
 ~~~
 ~~~powershell
 write-host "Creando Variables" -ForegroundColor green
-$vmName = "fileserver"
+$vmName = "IIS_SMTP"
 $rootPath="D:\HyperVMS"
 $VmPathNewDisco="Discos\$vmName.vhdx"
 $pathBase="E:\basesDiscos\W2022"

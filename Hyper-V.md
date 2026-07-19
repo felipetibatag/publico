@@ -48,7 +48,7 @@ Set-ItemProperty -Path $VHDPathW11 -Name IsReadOnly -Value $true
 # 1. Crear VM desde la maestra
 $DefaultVirtualDiskPath = "D:\Hyper-V\Disks"
 $DefaultVMPath = "D:\Hyper-V\VMs"
-$NewVMName = "DC01"
+$NewVMName = "SMTP_IIS"
 $ChildPath = "$DefaultVirtualDiskPath\$NewVMName.vhdx"
 New-VHD -ParentPath "$DefaultVirtualDiskPath\SRV-MAESTRO-2022.vhdx" -Path $ChildPath -Differencing
 New-VM -Name $NewVMName -MemoryStartupBytes 4GB -Generation 2 -Path $DefaultVMPath -VHDPath $ChildPath -SwitchName "Switch-Laboratorio-Interno"

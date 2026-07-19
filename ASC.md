@@ -1,7 +1,7 @@
 - Crear ***Communication Service***, este es el papá de los servicios internos, uno de ellos será el email communication service.
 - Crear ***Email communication service*** 
 - En este ***Email communication service*** es donde agrego el dominio, dkim, spf, etc., cuando todo esté en verde entonces voy al ***Communication service*** para conectar este dominio:
-![](imgs/Pasted%20image%2020260611234705.png)
+![697](imgs/Pasted%20image%2020260611234705.png)
 
 ![](imgs/Pasted%20image%2020260611234746.png)
 

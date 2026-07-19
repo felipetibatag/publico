@@ -8,77 +8,35 @@
         "type": "tabs",
         "children": [
           {
-            "id": "003d43072cd94125",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_TODO.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "_TODO"
-            }
-          },
-          {
-            "id": "0c7eab090f572e2d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CA.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "CA"
-            }
-          },
-          {
             "id": "c71c86cb2f1f1d67",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "certicados(PlantillaWindows).md",
+                "file": "__LAB.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "certicados(PlantillaWindows)"
+              "title": "__LAB"
             }
           },
           {
-            "id": "08b88534eafade56",
+            "id": "7cf6cc091199b0f3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ASC.md",
+                "file": "Exchange - Borrar BD's.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ASC"
-            }
-          },
-          {
-            "id": "2db8b5512946e45c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Postfix.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Postfix"
+              "title": "Exchange - Borrar BD's"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -240,10 +198,26 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "2db8b5512946e45c",
+  "active": "7cf6cc091199b0f3",
   "lastOpenFiles": [
-    "ASC.md",
+    "imgs/Pasted image 20260718231307.png",
+    "__LAB.md",
+    "Exchange - Borrar BD's.md",
     "Postfix.md",
+    "Hyper-V.md",
+    "Hyper-v Crear Maquinas.md",
+    "sitioSeguroApache(Linux).md",
+    "JEA.md",
+    "IIS Redireccion 80 a 443.md",
+    "GPO Asignar-Retirar Grupos.md",
+    "Cuentas Servicio (gMSA).md",
+    "certicados(PlantillaWindows).md",
+    "ASC.md",
+    "Sysprep W11.md",
+    "AzureStorage.md",
+    "DFS.md",
+    "_TODO.md",
+    "imgs/Pasted image 20260612005135.png",
     "imgs/Pasted image 20260612014255.png",
     "imgs/Pasted image 20260612013614.png",
     "imgs/Pasted image 20260612012700.png",
@@ -253,20 +227,7 @@
     "imgs/Pasted image 20260612011439.png",
     "imgs/Pasted image 20260612010800.png",
     "imgs/Pasted image 20260612010748.png",
-    "imgs/Pasted image 20260612010732.png",
-    "certicados(PlantillaWindows).md",
-    "GPO Asignar-Retirar Grupos.md",
-    "JEA.md",
-    "Sysprep W11.md",
-    "Hyper-v Crear Maquinas.md",
-    "IIS Redireccion 80 a 443.md",
-    "sitioSeguroApache(Linux).md",
-    "Hyper-V.md",
-    "DFS.md",
-    "_TODO.md",
     "CA.md",
-    "AzureStorage.md",
-    "Cuentas Servicio (gMSA).md",
     "TrustRelationship.md",
     "TeamViewer.pdf",
     "imgs/LaboratorioJEA 1.zip",
