@@ -90,3 +90,29 @@ Se supone que en cosas como Apache que piden o tienen interfaz gráfica con el i
 httpd.exe -k install -n "Apache24"
 ~~~
 
+
+# Comandos todo en uno
+
+~~~powershell
+New-PSRoleCapabilityFile -Path MesaAyuda.psrc
+New-PSSessionConfigurationFile -Path MesaAyudaConfig.pssc
+
+# 1. Definir rutas
+$moduleName = "ModuloMesaAyuda"
+$modulePath = "C:\Program Files\WindowsPowerShell\Modules\$moduleName"
+$rolePath   = "$modulePath\RoleCapabilities"
+$jeaConfigDir = "C:\ProgramData\JEA"
+
+# 2. Crear la estructura de carpetas
+New-Item -ItemType Directory -Path $rolePath -Force | Out-Null
+New-Item -ItemType Directory -Path $jeaConfigDir -Force | Out-Null
+
+# 3. Crear el Manifiesto del Módulo (.psd1)
+New-ModuleManifest -Path "$modulePath\$moduleName.psd1" -RootModule "$moduleName.psm1"
+New-Item -ItemType File -Path "$modulePath\$moduleName.psm1" -Force | Out-Null
+
+$psscpath="$jeaConfigDir\MesaAyudaConfig.pssc"
+
+# Registrar el endpoint de JEA localmente
+Register-PSSessionConfiguration -Name 'JEA_MesaDeAyuda' -Path $psscPath -Force
+~~~

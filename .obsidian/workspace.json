@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Exchange - Borrar BD's.md",
+                "file": "JEA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Exchange - Borrar BD's"
+              "title": "JEA"
             }
           }
         ],
@@ -200,9 +200,9 @@
   },
   "active": "7cf6cc091199b0f3",
   "lastOpenFiles": [
-    "imgs/Pasted image 20260718231307.png",
     "__LAB.md",
     "Exchange - Borrar BD's.md",
+    "imgs/Pasted image 20260718231307.png",
     "Postfix.md",
     "Hyper-V.md",
     "Hyper-v Crear Maquinas.md",
@@ -226,7 +226,6 @@
     "imgs/Pasted image 20260612012315.png",
     "imgs/Pasted image 20260612011439.png",
     "imgs/Pasted image 20260612010800.png",
-    "imgs/Pasted image 20260612010748.png",
     "CA.md",
     "TrustRelationship.md",
     "TeamViewer.pdf",
