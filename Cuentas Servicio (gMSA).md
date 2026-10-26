@@ -7,13 +7,18 @@ Add-KdsRootKey -EffectiveTime ((Get-Date).AddHours(-10))
 ~~~
 ## Crear la cuenta gMSA en Active Directory
 
-El parámetro `-PrincipalsAllowedToRetrieveManagedPassword` le dice a AD qué equipos tienen derecho a pedir la contraseña de esta cuenta. Ponemos tu DC por ahora.
+El parámetro `-PrincipalsAllowedToRetrieveManagedPassword` le dice a AD qué equipos tienen derecho a pedir la contraseña de esta cuenta.
 
 ~~~powershell
 New-ADServiceAccount -Name "gmsa-tareas" `
                      -DNSHostName "gmsa-tareas.miscositas.local" `
                      -PrincipalsAllowedToRetrieveManagedPassword "equipo1$" `
                      -Enabled $true
+                     -KerberosEncryptionType AES128,AES256
+# En el servidor en donde estará la cuenta
+install-windowsfeature rsat-ad-powershell
+install-adserviceaccount "gmsa-tareas"
+test-adserviceaccount "gmsa-tareas"
 ~~~
 ## Instalar y Validar la cuenta en el Servidor (equipo1)
  Una vez creada la cuenta en el dominio toca asociarla físicamente al sistema operativo del servidor donde se usara la cuenta gMSA:

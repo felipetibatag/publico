@@ -27,16 +27,42 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JEA.md",
+                "file": "AzureStorage.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "JEA"
+              "title": "AzureStorage"
+            }
+          },
+          {
+            "id": "dcb1fffcdb7ada13",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.13.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "Registro de cambios 1.13.4"
+            }
+          },
+          {
+            "id": "b92bb552fb2cff82",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Cuentas Servicio (gMSA).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Cuentas Servicio (gMSA)"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -56,7 +82,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Explorador de archivos"
@@ -198,24 +226,26 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "7cf6cc091199b0f3",
+  "active": "b92bb552fb2cff82",
   "lastOpenFiles": [
-    "__LAB.md",
+    "DFS.md",
     "Exchange - Borrar BD's.md",
-    "imgs/Pasted image 20260718231307.png",
+    "GPO Asignar-Retirar Grupos.md",
+    "AzureStorage.md",
+    "CA.md",
     "Postfix.md",
+    "Sin título.canvas",
+    "JEA.md",
+    "__LAB.md",
+    "imgs/Pasted image 20260718231307.png",
     "Hyper-V.md",
     "Hyper-v Crear Maquinas.md",
     "sitioSeguroApache(Linux).md",
-    "JEA.md",
     "IIS Redireccion 80 a 443.md",
-    "GPO Asignar-Retirar Grupos.md",
     "Cuentas Servicio (gMSA).md",
     "certicados(PlantillaWindows).md",
     "ASC.md",
     "Sysprep W11.md",
-    "AzureStorage.md",
-    "DFS.md",
     "_TODO.md",
     "imgs/Pasted image 20260612005135.png",
     "imgs/Pasted image 20260612014255.png",
@@ -226,7 +256,6 @@
     "imgs/Pasted image 20260612012315.png",
     "imgs/Pasted image 20260612011439.png",
     "imgs/Pasted image 20260612010800.png",
-    "CA.md",
     "TrustRelationship.md",
     "TeamViewer.pdf",
     "imgs/LaboratorioJEA 1.zip",
