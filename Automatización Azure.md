@@ -1,26 +1,3 @@
-~~~powershell
-$miId  = "<ObjectId de ctaautomatizacion1>"
-$graph = Get-MgServicePrincipal -Filter "appId eq '00000003-0000-0000-c000-000000000000'" # este es el app id de la cual voy a dar permiso, de la que se supone tiene el rol a asignar.
-
-## ver que roles existen para escoger cuál voy a asignar a la cuenta miID, que es la identidad de la cuenta de automatización.
-
-$graph.AppRoles | ? { $_.Value -like "User.Read*" } | select Value, Id
-
-#Detectado el rol que requiero ...pues lo asigno
-
-$role = $graph.AppRoles | ? { $_.Value -eq "User.Read.All" -and $_.AllowedMemberTypes -contains "Application" }
-
-New-MgServicePrincipalAppRoleAssignment -ServicePrincipalId $miId -PrincipalId $miId -ResourceId $graph.Id -AppRoleId $role.Id
-~~~
-
-El `$miID` lo saco de acá:
-
-![](imgs/Pasted%20image%2020261121154025.png)
-
-En la aplicación empresarial de Graph se verá replicado el permiso, toca esperar unos 2 minutos para que la cuenta de automatización tenga bien los permisos:
-
-![](imgs/Pasted%20image%2020261107200835.png)
-
 # Guía rápida: reporte de cuarentena con Azure Automation
 
 Nov 21, 2026 · @Felipe
