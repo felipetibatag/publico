@@ -11,14 +11,15 @@ El parámetro `-PrincipalsAllowedToRetrieveManagedPassword` le dice a AD qué eq
 
 ~~~powershell
 New-ADServiceAccount -Name "gmsa-tareas" `
-                     -DNSHostName "gmsa-tareas.miscositas.local" `
+                     -DNSHostName "gmsa-tareas.miscositas.local" ` #este puede ser cualquier cosa no necesariamente tiene que ser un registro DNS real, pero se recomienda siempre que sea el dominiolocal
                      -PrincipalsAllowedToRetrieveManagedPassword "equipo1$" `
                      -Enabled $true
                      -KerberosEncryptionType AES128,AES256
-# En el servidor en donde estará la cuenta
-install-windowsfeature rsat-ad-powershell
-install-adserviceaccount "gmsa-tareas"
-test-adserviceaccount "gmsa-tareas"
+
+Add-WindowsCapability -Online -Name "Rsat.ActiveDirectory.DS-LDS.Tools~~~~0.0.1.0" # esto es para los windows 11,10
+Install-windowsfeature rsat-ad-powershell # Esto es para los servidores.
+Install-adserviceaccount "gmsa-tareas"
+Test-ADServiceAccount "gmsa-tareas"
 ~~~
 ## Instalar y Validar la cuenta en el Servidor (equipo1)
  Una vez creada la cuenta en el dominio toca asociarla físicamente al sistema operativo del servidor donde se usara la cuenta gMSA:
